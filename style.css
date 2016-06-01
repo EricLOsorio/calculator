@@ -1,0 +1,113 @@
+body {
+	background-color: darkgrey;
+}
+
+.wrapper {
+	position: relative;
+}
+
+.content {
+	position: absolute;
+	right:35%;
+	left:35%;
+	background-color:black;
+
+}
+
+#display {
+	width: 99%;
+	border-radius:0.3em;
+	text-align: right;
+	font-size: xx-large ;
+	border:2px solid black;
+	margin-bottom:1em;
+
+}
+
+#inputtype {
+	color: white;
+	margin-bottom:1em;
+}
+
+table {
+	display: inline-block;
+	margin-bottom: 0.5em;
+	background-color: purple;
+
+}
+
+td {
+	cursor: pointer;
+}
+
+td:hover {
+	background-color:white;
+}
+
+#top-left, #bottom-left {
+	width:30%;
+}
+
+#top-right, #bottom-right {
+	width:69%;
+}
+
+
+#top-left td, #bottom-left td{
+	width:5em;
+	padding-bottom: 0.3em;
+	border-radius: 0.5em;
+	text-align: center;
+
+}
+
+#top-right td, #bottom-right td{
+	width:5em;
+	border-radius: 0.5em;
+	text-align: center;
+
+}
+
+#bottom-right td {
+	height: 1.35em;
+}
+.nums{
+	background-color:royalblue;
+}
+
+.functions {
+	background-color: green;
+}
+
+.logic {
+	background-color: darkturquoise;
+}
+
+.fraction {
+	background-color: cadetblue;
+}
+
+.clear {
+	background-color: red;
+}
+
+.total {
+	background-color:chartreuse;
+}
+
+.button {
+  display:block;
+  margin-bottom:2%;
+  width:10%;
+  background-color: blue;
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 30px;
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
