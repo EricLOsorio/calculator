@@ -9,7 +9,7 @@
 	<div class="wrapper">
 		<div class="content">
 
-		<form>
+		<form id="calc">
 			<input type="text" name="display" id="display" value="0" readonly>
 
 			<section id="inputtype">
@@ -89,8 +89,8 @@
 						<td class="functions">nCr</td>
 					</tr>
 					<tr>
-						<td class="nums">e</td>
-						<td class="nums">&pi;</td>
+						<td class="functions">e</td>
+						<td class="functions">&pi;</td>
 					</tr>					
 				</table>
 
@@ -102,33 +102,33 @@
 						<td class="functions">mr</td>							
 					</tr>
 					<tr>
-						<td class="functions">+</td>
-						<td class="functions">-</td>
-						<td class="functions">*</td>
-						<td class="functions">&divide;</td>							
+						<td class="nums">+</td>
+						<td class="nums">-</td>
+						<td class="nums">*</td>
+						<td class="nums">&divide;</td>							
 					</tr>
 					<tr >
 						<td class="nums" >7</td>
 						<td class="nums">8</td>
 						<td class="nums">9</td>
-						<td class="clear">C</td>							
+						<td class="nums" id=clear>C</td>							
 					</tr>
 					<tr>
 						<td class="nums">4</td>
 						<td class="nums">5</td>
 						<td class="nums">6</td>
-						<td class="clear">DEL</td>							
+						<td class="nums" id="clear" >DEL</td>							
 					</tr>
 					<tr>
 						<td class="nums">1</td>
 						<td class="nums">2</td>
 						<td class="nums">3</td>
-						<td rowspan="2" class="total">=</td>							
+						<td rowspan="2" class="total" id="total">=</td>							
 					</tr>
 					<tr>
 						<td class="nums">0</td>
 						<td class="nums">.</td>
-						<td class="nums">+/-</td>
+						<td class="nums">&plusmn;</td>
 							
 					</tr>					
 				</table>
@@ -139,6 +139,7 @@
 
 		</div>
 	</div>
-	<a href="http://ericlosorio.github.io/Multi-Page-Web-Site/" class="button">back to home page</a>
+	<a href="../homepage.html" class="button">back to home page</a>
+	<script type="text/javascript" src="calc.js"></script>
 </body>
 </html>
