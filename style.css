@@ -11,7 +11,11 @@ body {
 	right:35%;
 	left:35%;
 	background-color:black;
+}
 
+#top-functions{
+  display:flex;
+  flex-wrap:wrap;
 }
 
 #display {
