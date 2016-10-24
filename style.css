@@ -120,25 +120,48 @@ td:hover {
 
   
   .content{
-  	  right:5%;
-  	  left:5%;
+    right:0%;
+    left:0%;
+    border:5px solid black;      
   }
   #top-left td, #bottom-left td{
-	width:8em;
-	padding-bottom: 0.3em;
-	border-radius: 0.5em;
-	text-align: center;
+    width:5em;
+    height:2.5em;
+   padding-bottom: 0.3em;
+   border-radius: 0.5em;
+   text-align: center;
+    font-size:3em;
   }
   #top-right td, #bottom-right td{
-	width:9em;
-	border-radius: 0.5em;
-	text-align: center;
+   width:4em;
+    height:2.5em;
+   border-radius: 0.5em;
+   text-align: center;
+    font-size:3em;
   }
-    .button{
-  	position:absolute;
-  	top:55%;
-  	width:20%;
-  	left:40%;
+
+  #bottom-right td {
+  height: 1.9em;
+}
+
+  #bottom-left td{
+    height:2em;
+    font-size:2.5em;
+  }
+
+  #top-right td {
+  height: 1.9em;
+}
+
+  #top-left td{
+    height:1.6em;
+  }
+
+  .button{
+    position:absolute;
+    top:95%;
+    width:20%;
+    left:40%;
   }
 
 }
@@ -146,25 +169,48 @@ td:hover {
 @media (max-device-width:600px){
   
   .content{
-  	  right:15%;
-  	  left:15%;
+    right:0%;
+    left:0%;
+    border:5px solid blue;      
   }
   #top-left td, #bottom-left td{
-	width:7em;
-	padding-bottom: 0.3em;
-	border-radius: 0.5em;
-	text-align: center;
+    width:5em;
+    height:2.5em;
+   padding-bottom: 0.3em;
+   border-radius: 0.5em;
+   text-align: center;
+    font-size:3em;
   }
   #top-right td, #bottom-right td{
-	width:7em;
-	border-radius: 0.5em;
-	text-align: center;
+   width:4em;
+    height:2.5em;
+   border-radius: 0.5em;
+   text-align: center;
+    font-size:3em;
   }
-    .button{
-  	position:absolute;
-  	top:28%;
-  	width:20%;
-  	left:40%;
+
+  #bottom-right td {
+  height: 2.5em;
+}
+
+  #bottom-left td{
+    height:2.7em;
+    font-size:2.5em;
+  }
+
+  #top-right td {
+  height: 2.9em;
+}
+
+  #top-left td{
+    height:2.6em;
+  }
+
+  .button{
+    position:absolute;
+    top:95%;
+    width:20%;
+    left:40%;
   }
 
 }
@@ -172,23 +218,24 @@ td:hover {
 @media (max-device-width:360px){
   
   .content{
-  	  right:5%;
-  	  left:5%;
+    right:0%;
+    left:0%;
+    border:5px solid red;      
   }
   #top-left td, #bottom-left td{
-	width:5em;
-  height:1.5em;
-	padding-bottom: 0.3em;
-	border-radius: 0.5em;
-	text-align: center;
-  font-size:3em;
+	  width:6em;
+    height:1.5em;
+	 padding-bottom: 0.3em;
+	 border-radius: 0.5em;
+	 text-align: center;
+    font-size:3em;
   }
   #top-right td, #bottom-right td{
-	width:3em;
-  height:1.5em;
-	border-radius: 0.5em;
-	text-align: center;
-  font-size:3em;
+	 width:4em;
+    height:1.5em;
+	 border-radius: 0.5em;
+	 text-align: center;
+    font-size:3em;
   }
 
   #bottom-right td {
