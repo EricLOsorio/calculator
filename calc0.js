@@ -6,30 +6,10 @@ window.onload=(function(){
   var fraction=document.getElementsByClassName("fraction");
 
 
-  var display=document.getElementById("display");
-  j=0; //Used to count all characters up to the LATEST symbol
-  k=0; //Used in determining what to do when DOT is pressed
-
-
-for(var n=0; n<functions.length;n++){
-    functions[n].addEventListener('click',function(event){
-       display.value="Feature coming soon!";
-    });
-};
-
-for(var o=0; o<logic.length;o++){
-    logic[o].addEventListener('click',function(event){
-       display.value="Feature coming soon!";
-    });
-};
-
-for(var p=0; p<fraction.length;p++){
-    fraction[p].addEventListener('click',function(event){
-       display.value="Feature coming soon!";
-    });
-}
-
-
+  var display=document.getElementById("display"),
+  j=0, //Used to count all characters up to the LATEST symbol
+  k=0, //Used in determining what to do when DOT is pressed
+  clearFlag=true; //Display is initially 0 or when the "C" key hit
 
 
   for(var i=0; i<numberKeys.length;i++){
@@ -48,7 +28,7 @@ for(var p=0; p<fraction.length;p++){
           if((theDisplay[theDisplay.length-1]==Number(theDisplay[theDisplay.length-1])||
             theDisplay[theDisplay.length-1]==".") && theCode!==247){
             theDisplay=theDisplay+this.innerHTML;
-        
+
             j=theDisplay.length-1;
              k=j;  
 
@@ -68,7 +48,7 @@ for(var p=0; p<fraction.length;p++){
           };              
               
            } else {
-              var newDisplay="";
+              var newDisplay=""; 
               for(var n=0;n<theDisplay.length-1;n++){
                newDisplay=newDisplay+theDisplay[n];
           };  
@@ -89,11 +69,15 @@ for(var p=0; p<fraction.length;p++){
              };
             
       } else if(this.innerHTML==Number(this.innerHTML)){
+            if(clearFlag){
+              theDisplay="";
+              clearFlag=false;
+            }
             theDisplay=theDisplay+this.innerHTML;
                j=theDisplay.length-1;
 
 
-      } else if(theCode===177){ 
+      } else if(theCode===177){
 
             var frontDisplay="";
              if(k!==0){
@@ -101,15 +85,24 @@ for(var p=0; p<fraction.length;p++){
 
                 for (var m=0;m<k+1;m++){
                   frontDisplay=frontDisplay+theDisplay[m];
-                 };
+                 }; 
+
 
                  if(theDisplay[(k+1)]!=="-"){
                   numOnly="-"+numOnly;
                  } else{
                   numOnly=numOnly.substr(1);
                  }
+
+                 if(frontDisplay[frontDisplay.length-1]!=="-"){
+                   theDisplay=frontDisplay+numOnly;                   
+                 } else {
+                    numOnly=numOnly.substr(1);
+                    frontDisplay=frontDisplay.substring(0,(frontDisplay.length-1));
+                    theDisplay=frontDisplay+"+"+numOnly;
+                 }
                 
-                 theDisplay=frontDisplay+numOnly; 
+
                  
 
              } else {
@@ -140,7 +133,8 @@ for(var p=0; p<fraction.length;p++){
             } else k=j;
           };
         } else if(this.innerHTML==="C") {
-          theDisplay="";
+          theDisplay="0";
+          clearFlag=true;
         };
       
 

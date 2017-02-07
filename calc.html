@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
 	<meta charset="UTF-8">
 	<title>Calculator App</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style0.css">
 </head>
 <body>
 	<div class="wrapper">
@@ -12,101 +12,13 @@
 		<form id="calc">
 			<input type="text" name="display" id="display" value="0" readonly>
 
-			<section id="inputtype">
-				<input type="radio" name="DegRadGrad" value="Degrees" id="deg" checked><label for="deg">Degrees</label>
-				<input type="radio" name="DegRadGrad" value="Radians" id="rad"><label for="rad">Radians</label>
-				<input type="radio" name="DegRadGrad" value="Gradians" id="grad"><label for="grad">Gradians</label>
-				<input type="radio" name="DecHex" value="Dec" id="dec" checked><label for="dec">Decimal</label>
-				<input type="radio" name="DecHex" value="Hex" id="hex"><label for="hex">Hex</label>
-			</section>
-
-			<section id="top-functions">
-				<table id="top-left" >
-					<tr>
-						<td class="functions">Inv</td>
-						<td class="functions">x!</td>
-					</tr>
-					<tr>
-						<td class="functions">sin</td>
-						<td class="functions">sinh</td>
-					</tr>
-					<tr>
-						<td class="functions">cos</td>
-						<td class="functions">cosh</td>
-					</tr>
-					<tr>
-						<td class="functions">tan</td>
-						<td class="functions">tanh</td>
-					</tr>
-				</table>
-
-				<table id="top-right">
-					<tr>
-						<td class="functions">&#8730;</td>
-						<td class="functions">x<sup>2</sup></td>
-						<td class="functions">x<sup>3</sup></td>
-						<td class="functions">y<sup>x</sup></td>							
-					</tr>
-					<tr>
-						<td class="functions">1/x</td>
-						<td class="functions">ln</td>
-						<td class="functions">log<sub>2</sub></td>
-						<td class="functions">log<sub>10</sub></td>							
-					</tr>
-					<tr>
-						<td class="functions">x&#8730;y</td>
-						<td class="functions">e<sup>x</sup></td>
-						<td class="functions">2<sup>x</sup></td>
-						<td class="functions">10<sup>x</sup></td>							
-					</tr>
-					<tr>
-						<td class="functions">EE</td>
-						<td class="functions">(</td>
-						<td class="functions">)</td>
-						<td class="functions">%</td>							
-					</tr>
-				</table>
-
-
-				<table id="bottom-left" >
-					<tr>
-						<td class="logic">and</td>
-						<td class="logic">rand</td>
-					</tr>
-					<tr>
-						<td class="logic">or</td>
-						<td class="logic">xor</td>
-					</tr>
-					<tr>
-						<td class="fraction">A b/c</td>
-						<td class="fraction">b/c</td>
-					</tr>
-					<tr>
-						<td class="fraction">decimal</td>
-						<td class="fraction">reduce</td>
-					</tr>
-					<tr>
-						<td class="functions">nPr</td>
-						<td class="functions">nCr</td>
-					</tr>
-					<tr>
-						<td class="functions">e</td>
-						<td class="functions">&pi;</td>
-					</tr>					
-				</table>
-
 				<table id="bottom-right">
+
 					<tr>
-						<td class="functions">mc</td>
-						<td class="functions">mc+</td>
-						<td class="functions">mc-</td>
-						<td class="functions">mr</td>							
-					</tr>
-					<tr>
-						<td class="nums">+</td>
-						<td class="nums">-</td>
-						<td class="nums">*</td>
-						<td class="nums">&divide;</td>							
+						<td class="nums oper">+</td>
+						<td class="nums oper">-</td>
+						<td class="nums oper">*</td>
+						<td class="nums oper">&divide;</td>							
 					</tr>
 					<tr >
 						<td class="nums" >7</td>
@@ -134,13 +46,11 @@
 					</tr>					
 				</table>
 
-			</section>
-
 		</form>
 
 		</div>
 	</div>
-	<a href="https://ericlosorio.github.io/Interactive-non-JS-Portfolio-Web-App/" class="button">back to home page</a>
+	<a href="../homepage.html" class="button">back to home page</a>
 	<script type="text/javascript" src="calc0.js"></script>
 </body>
 </html>
